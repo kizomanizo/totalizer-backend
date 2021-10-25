@@ -65,7 +65,7 @@ POST http://localhost:4001/api/v1/users/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "username": "admin",
+    "username": "{{$dotenv LEVEL_ONE_NAME}}",
     "password": "{{$dotenv DEMO_PASSWORD}}"
 }
 
